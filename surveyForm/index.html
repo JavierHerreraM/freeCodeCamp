@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" </head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset class="form-first-part">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" required placeholder="Enter your name">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" required placeholder="Enter your email">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" type="number" min="16" max="100" placeholder="Enter your age">
+                <label>What is your gender?</label>
+                <select id="dropdown">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="not-say">Rather not say</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-second-part">
+                <p>Do you buy food online?</p>
+                <label>
+                    <input id="radio1" type="radio" name="radio" value="yes">Yes
+                </label>
+                <label>
+                    <input id="radio2" type="radio" name="radio" value="no">No
+                </label>
+            </fieldset>
+            <fieldset class="form-third-part">
+                <p>Which are your favorite types of food?</p>
+                <label>
+                    <input type="checkbox" name="food-checkbox" value="fruits">Fruits
+                </label>
+                <label>
+                    <input type="checkbox" name="food-checkbox" value="vegetables">Vegetables
+                </label>
+                <label>
+                    <input type="checkbox" name="food-checkbox" value="dairy">Dairy
+                </label>
+                <label>
+                    <input type="checkbox" name="food-checkbox" value="proteins">Proteins
+                </label>
+                <label>
+                    <input type="checkbox" name="food-checkbox" value="grains">Grains
+                </label>
+            </fieldset>
+
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" form="survey-form" placeholder="Type your comments here..."></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </main>
+
+</body>
+
+</html>
